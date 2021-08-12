@@ -1,0 +1,22 @@
+{
+  "private": true, 
+  "name": "utensil",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bootstrap": "lerna bootstrap"
+  },
+  "keywords": [],
+  "author": "xiong feng",
+  "license": "ISC",
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "electron": "^13.1.9"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}

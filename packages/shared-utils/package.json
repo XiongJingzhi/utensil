@@ -1,0 +1,19 @@
+{
+  "name": "shared-utils",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "davidxiong <davidxiong1994@gmail.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/shared-utils.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  }
+}
