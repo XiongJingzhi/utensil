@@ -5,16 +5,23 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "bootstrap": "lerna bootstrap"
+    "bootstrap": "lerna bootstrap",
+    "start:core": "lerna exec --scope core -- yarn start"
   },
   "keywords": [],
   "author": "xiong feng",
   "license": "ISC",
-  "workspaces": [
-    "packages/*"
-  ],
-  "dependencies": {
-    "electron": "^13.1.9"
+  "workspaces": {
+    "nohoist": [
+      "**/electron",
+      "**/@babel/plugin-transform-runtime",
+      "**/@babel/runtime",
+      "**/@babel/runtime/**",
+      "**/@babel/plugin-transform-runtime/**"
+    ],
+    "packages": [
+      "packages/*"
+    ]
   },
   "devDependencies": {
     "lerna": "^4.0.0"
